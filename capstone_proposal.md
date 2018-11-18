@@ -4,12 +4,15 @@ Seoul
 November 18st, 2018
 
 ## Proposal
-_(approx. 2-3 pages)_
+
+Quick, Draw! Doodle Recognition Challenge (Kaggle Competition)
 
 ### Domain Background
-_(approx. 1-2 paragraphs)_
 
-In this section, provide brief details on the background information of the domain from which the project is proposed. Historical information relevant to the project should be included. It should be clear how or why a problem in the domain can or should be solved. Related academic research should be appropriately cited in this section, including why that research is relevant. Additionally, a discussion of your personal motivation for investigating a particular problem in the domain is encouraged but not required.
+"Quick, Draw!" was released as an experimental game to educate the public in a playful way about how AI works. The game prompts users to draw an image depicting a certain category, such as ”banana,” “table,” etc. The game generated more than 1B drawings, of which a subset was publicly released as the basis for this competition’s training set. That subset contains 50M drawings encompassing 340 label categories.
+
+Sounds fun, right? Here's the challenge: since the training data comes from the game itself, drawings can be incomplete or may not match the label. You’ll need to build a recognizer that can effectively learn from this noisy data and perform well on a manually-labeled test set from a different distribution.
+
 
 ### Problem Statement
 _(approx. 1 paragraph)_

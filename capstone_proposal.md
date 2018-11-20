@@ -12,17 +12,24 @@ Quick, Draw! is an online game developed by Google.
 
 "Quick, Draw!" was released as an experimental game to educate the public in a playful way about how AI works. The game prompts users to draw an image depicting a certain category, such as ”banana,” “table,” etc. The game generated more than 1B drawings, of which a subset was publicly released as the basis for this competition’s training set. That subset contains 50M drawings encompassing 340 label categories.
 
-
 ### Problem Statement
 
 Since the training data comes from the game itself, drawings can be incomplete or may not match the label. You’ll need to build a recognizer that can effectively learn from this noisy data and perform well on a manually-labeled test set from a different distribution.
 
-In this section, clearly describe the problem that is to be solved. The problem described should be well defined and should have at least one relevant potential solution. Additionally, describe the problem thoroughly such that it is clear that the problem is quantifiable (the problem can be expressed in mathematical or logical terms) , measurable (the problem can be measured by some metric and clearly observed), and replicable (the problem can be reproduced and occurs more than once).
-
 ### Datasets and Inputs
-_(approx. 2-3 paragraphs)_
+The Quick Draw Dataset is a collection of millions of drawings across 300+ categories, contributed by players of Quick, Draw! The drawings were captured as timestamped vectors, tagged with metadata including what the player was asked to draw and in which country the player was located.
 
-In this section, the dataset(s) and/or input(s) being considered for the project should be thoroughly described, such as how they relate to the problem and why they should be used. Information such as how the dataset or input is (was) obtained, and the characteristics of the dataset or input, should be included with relevant references and citations as necessary It should be clear how the dataset(s) or input(s) will be used in the project and whether their use is appropriate given the context of the problem.
+Two versions of the data are given. The raw data is the exact input recorded from the user drawing, while the simplified version removes unnecessary points from the vector information. (For example, a straight line may have been recorded with 8 points, but since you only need 2 points to uniquely identify a line, 6 points can be dropped.) The simplified files are much smaller and provide effectively the same information. I will use the simplified files because the raw file is huge.
+
+1. test_raw.csv - the test data in the raw vector format
+  Column: key_idUnique Identifier
+          countrycode2-Letter Country Code
+          drawingDrawing Vector Data
+2. test_simplified.csv - the test data in the simplified vector format
+3. train_raw.zip - the training data in the raw vector format; one csv file per word
+4. train_simplified.zip - the training data in the simplified vector format; one csv file per word
+
+These datasets are provided by Google AI on Kaggle competition website. 
 
 ### Solution Statement
 _(approx. 1 paragraph)_

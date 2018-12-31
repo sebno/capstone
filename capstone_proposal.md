@@ -65,4 +65,9 @@ tool and libraries
 
 ### References
 
+Kaggle Competition
+https://www.kaggle.com/c/humpback-whale-identification
+
+Happywhale
+https://happywhale.com
 

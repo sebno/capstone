@@ -47,7 +47,7 @@ In this section, provide the details for a benchmark model or result that relate
 
 Submissions are evaluated according to the Mean Average Precision @ 5 (MAP@5):
 
-MAP@5 = \frac{1}{U} \sum_{u=1}^{U}  \sum_{k=1}^{min(n,5)} P(k) \times rel(k)
+$ MAP@5 = \frac{1}{U} \sum_{u=1}^{U}  \sum_{k=1}^{min(n,5)} P(k) \times rel(k) $
 
 where U is the number of images, P(k) is the precision at cutoff k, n is the number predictions per image, and rel(k) is an indicator function equaling 1 if the item at rank k is a relevant (correct) label, zero otherwise.
 

@@ -47,60 +47,8 @@ In this section, provide the details for a benchmark model or result that relate
 
 Submissions are evaluated according to the Mean Average Precision @ 5 (MAP@5):
 
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mi>M</mi>
-  <mi>A</mi>
-  <mi>P</mi>
-  <mrow class="MJX-TeXAtom-ORD">
-    <mo>@</mo>
-  </mrow>
-  <mn>5</mn>
-  <mo>=</mo>
-  <mfrac>
-    <mn>1</mn>
-    <mi>U</mi>
-  </mfrac>
-  <munderover>
-    <mo>&#x2211;<!-- ∑ --></mo>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mi>u</mi>
-      <mo>=</mo>
-      <mn>1</mn>
-    </mrow>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mi>U</mi>
-    </mrow>
-  </munderover>
-  <munderover>
-    <mo>&#x2211;<!-- ∑ --></mo>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mi>k</mi>
-      <mo>=</mo>
-      <mn>1</mn>
-    </mrow>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mi>m</mi>
-      <mi>i</mi>
-      <mi>n</mi>
-      <mo stretchy="false">(</mo>
-      <mi>n</mi>
-      <mo>,</mo>
-      <mn>5</mn>
-      <mo stretchy="false">)</mo>
-    </mrow>
-  </munderover>
-  <mi>P</mi>
-  <mo stretchy="false">(</mo>
-  <mi>k</mi>
-  <mo stretchy="false">)</mo>
-  <mo>&#x00D7;<!-- × --></mo>
-  <mi>r</mi>
-  <mi>e</mi>
-  <mi>l</mi>
-  <mo stretchy="false">(</mo>
-  <mi>k</mi>
-  <mo stretchy="false">)</mo>
-</math>
+MAP@5 = \frac{1}{U} \sum_{u=1}^{U}  \sum_{k=1}^{min(n,5)} P(k) \times rel(k)
+
 where U is the number of images, P(k) is the precision at cutoff k, n is the number predictions per image, and rel(k) is an indicator function equaling 1 if the item at rank k is a relevant (correct) label, zero otherwise.
 
 Once a correct label has been scored for an observation, that label is no longer considered relevant for that observation, and additional predictions of that label are skipped in the calculation. 

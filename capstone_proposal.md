@@ -49,7 +49,7 @@ Submissions are evaluated according to the Mean Average Precision @ 5 (MAP@5):
 
 
 ![equation](http://latex.codecogs.com/gif.latex?Concentration%3D%5Cfrac%7BTotalTemplate%7D%7BTotalVolume%7D)  
-![equation](http://latex.codecogs.com/gif.latex?MAP@5%3D%5Cfrac%7B1%7D%7BU%7D) 
+![equation](http://latex.codecogs.com/gif.latex?MAP@5%3D%5Cfrac%7B1%7D%7BU%7D\Sum) 
 
 where U is the number of images, P(k) is the precision at cutoff k, n is the number predictions per image, and rel(k) is an indicator function equaling 1 if the item at rank k is a relevant (correct) label, zero otherwise.
 

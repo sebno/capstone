@@ -47,9 +47,7 @@ In this section, provide the details for a benchmark model or result that relate
 
 Submissions are evaluated according to the Mean Average Precision @ 5 (MAP@5):
 
-\begin{equation*}
-\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
-\end{equation*}
+
 
 where U is the number of images, P(k) is the precision at cutoff k, n is the number predictions per image, and rel(k) is an indicator function equaling 1 if the item at rank k is a relevant (correct) label, zero otherwise.
 

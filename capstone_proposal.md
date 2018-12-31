@@ -45,9 +45,13 @@ In this section, provide the details for a benchmark model or result that relate
 
 ### Evaluation Metrics
 
-(approx. 1-2 paragraphs)
+Submissions are evaluated according to the Mean Average Precision @ 5 (MAP@5):
 
-In this section, propose at least one evaluation metric that can be used to quantify the performance of both the benchmark model and the solution model. The evaluation metric(s) you propose should be appropriate given the context of the data, the problem statement, and the intended solution. Describe how the evaluation metric(s) are derived and provide an example of their mathematical representations (if applicable). Complex evaluation metrics should be clearly defined and quantifiable (can be expressed in mathematical or logical terms).
+
+
+where U is the number of images, P(k) is the precision at cutoff k, n is the number predictions per image, and rel(k) is an indicator function equaling 1 if the item at rank k is a relevant (correct) label, zero otherwise.
+
+Once a correct label has been scored for an observation, that label is no longer considered relevant for that observation, and additional predictions of that label are skipped in the calculation. 
 
 ### Project Design
 

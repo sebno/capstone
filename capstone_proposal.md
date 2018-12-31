@@ -34,9 +34,8 @@ These datasets were provided on Kaggle competition website.
 The whale images were provided by Happywhale that is a platform that uses image process algorithms to let anyone to submit their whale photo.
 
 ### Solution Statement
-_(approx. 1 paragraph)_
 
-In this section, clearly describe a solution to the problem. The solution should be applicable to the project domain and appropriate for the dataset(s) or input(s) given. Additionally, describe the solution thoroughly such that it is clear that the solution is quantifiable (the solution can be expressed in mathematical or logical terms) , measurable (the solution can be measured by some metric and clearly observed), and replicable (the solution can be reproduced and occurs more than once).
+In order to resolve the problem, I need a way to identify whales from the given images. I will use a deep learning with Convolutional Neural Networks (CNN) that allows to identify the species of whale. I expect to have a test accuracy greater than 60%. 
 
 ### Benchmark Model
 _(approximately 1-2 paragraphs)_

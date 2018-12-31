@@ -23,9 +23,12 @@ This training data contains thousands of images of humpback whale flukes. Indivi
 
 train.zip - a folder containing the training images
 
+test.zip - a folder containing the test images to predict the whale Id
+
 train.csv - maps the training Image to the appropriate whale Id. Whales that are not predicted to have a label identified in the training data should be labeled as new_whale.
 
-test.zip - a folder containing the test images to predict the whale Id
+  - Image : image file name
+  - Id    : whale's label 
 
 These datasets were provided on Kaggle competition website. 
 The whale images were provided by Happywhale that is a platform that uses image process algorithms to let anyone to submit their whale photo.

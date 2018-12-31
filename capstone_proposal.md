@@ -35,10 +35,13 @@ The whale images were provided by Happywhale that is a platform that uses image 
 
 ### Solution Statement
 
-In order to resolve the problem, I need a way to identify whales from the given images. I will use a deep learning with Convolutional Neural Networks (CNN) that allows to identify the species of whale. I expect to have a test accuracy greater than 60%. 
+In order to resolve the problem mentioned above, I need a way to identify whales from the given images. I will use a deep learning with Convolutional Neural Networks (CNN) that allows to identify the species of whale. I expect to get a test accuracy greater than 60%. 
 
 ### Benchmark Model
 _(approximately 1-2 paragraphs)_
+Dog breed detection project
+
+or kaggle competition
 
 In this section, provide the details for a benchmark model or result that relates to the domain, problem statement, and intended solution. Ideally, the benchmark model or result contextualizes existing methods or known information in the domain and problem given, which could then be objectively compared to the solution. Describe how the benchmark model or result is measurable (can be measured by some metric and clearly observed) with thorough detail.
 
